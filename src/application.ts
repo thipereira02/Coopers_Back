@@ -18,3 +18,5 @@ application.use(contactRoutes);
 application.listen(port, () => {
   console.log(`Application listening on port ${port}`);
 });
+
+export default application;
