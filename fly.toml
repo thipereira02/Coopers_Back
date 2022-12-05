@@ -1,7 +1,6 @@
-# fly.toml file generated for your-unique-app-id
+# fly.toml file generated for autumn-violet-3714 on 2022-12-05T10:24:41-03:00
 
-app = "your-unique-app-id"
-
+app = "autumn-violet-3714"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -18,7 +17,6 @@ processes = []
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
-
   [services.concurrency]
     hard_limit = 25
     soft_limit = 20
