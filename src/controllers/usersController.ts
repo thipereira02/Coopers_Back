@@ -15,7 +15,7 @@ export async function signup(req: Request, res: Response) {
 
     } catch (err) {
         console.log(err);
-        res.sendStatus(500);
+        res.send(err).status(500);
     }
 }
 
@@ -31,7 +31,7 @@ export async function login(req: Request, res: Response) {
 
     } catch (err) {
         console.log(err);
-        res.sendStatus(500);
+        res.send(err).status(500);
     }
 }
 

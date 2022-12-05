@@ -1,22 +1,13 @@
 import express from "express";
+import cors from "cors";
 
 import usersRoutes from "./routers/usersRoutes";
 
 const application = express();
+application.use(cors());
+application.use(express.json());
 
 const port = 8080;
-
-application
-  .get("/", (req, res) => {
-    res.send({
-      message: "Hello, World!",
-    });
-  })
-  .get("/random", (req, res) => {
-    res.send({
-      number: Math.floor(Math.random() * 100),
-    });
-  });
 
 application.use(usersRoutes);
 

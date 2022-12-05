@@ -5,8 +5,10 @@
     "format": "prettier --write . --ignore-path .gitignore"
   },
   "dependencies": {
+    "@types/cors": "^2.8.13",
     "bcrypt": "^5.1.0",
     "casual": "^1.6.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.17.3",
     "joi": "^17.7.0",
